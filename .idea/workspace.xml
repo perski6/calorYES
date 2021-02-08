@@ -20,19 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f044fcfc-89f1-4202-b581-c6254990cd87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/Database/connection.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/handlers/handlers.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/mainGroup.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/middlewares/middlewares.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/main/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/router/router.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api/handlers/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/handlers/handlers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api/mainGroup.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/mainGroup.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api/middlewares/middlewares.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/middlewares/middlewares.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -13,39 +13,39 @@ import (
 	"net/http"
 	"reflect"
 )
+
 type User struct {
-	ID			primitive.ObjectID	`json:"_id" bson:"_id"`
-	Nickname	string				`json:"nickname" bson:"nickname"`
-	Password	string				`json:"password" bson:"password"`
-	Age			string					`json:"age" bson:"age"`
-	Height		string					`json:"height" bson:"height"`
-	Weight		string					`json:"weight" bson:"weight"`
+	ID       primitive.ObjectID `json:"_id" bson:"_id"`
+	Nickname string             `json:"nickname" bson:"nickname"`
+	Password string             `json:"password" bson:"password"`
+	Age      string             `json:"age" bson:"age"`
+	Height   string             `json:"height" bson:"height"`
+	Weight   string             `json:"weight" bson:"weight"`
 }
 
 var CNX = Database.Connection()
+var usersCollection = CNX.Database("Caloryes").Collection("Users")
 
 func ListUsers(c echo.Context) error {
-
-	usersCollection := CNX.Database("Caloryes").Collection("Users")
 
 	var results []*User
 
 	cur, err := usersCollection.Find(context.TODO(), bson.M{})
-	if err != nil{
+	if err != nil {
 		log.Fatal(err)
 	}
 
-	for cur.Next(context.TODO()){
+	for cur.Next(context.TODO()) {
 		var elem User
 		err := cur.Decode(&elem)
-		if err != nil{
+		if err != nil {
 			log.Fatal(err)
 		}
 
 		results = append(results, &elem)
 	}
 
-	if err := cur.Err();err != nil{
+	if err := cur.Err(); err != nil {
 		log.Fatal(err)
 	}
 	_ = cur.Close(context.TODO())
@@ -54,24 +54,21 @@ func ListUsers(c echo.Context) error {
 
 func GetUser(c echo.Context) error {
 
-	user :=  User{}
-
-	usersCollection := CNX.Database("Caloryes").Collection("Users")
+	user := User{}
 
 	id := c.Param("id")
 	objID, _ := primitive.ObjectIDFromHex(id)
-	err := usersCollection.FindOne(context.TODO(),bson.M{"_id": objID}).Decode(&user)
-	if err != nil{
-		return c.String(http.StatusNotFound,"cant find user")
+	err := usersCollection.FindOne(context.TODO(), bson.M{"_id": objID}).Decode(&user)
+	if err != nil {
+		return c.String(http.StatusNotFound, "cant find user")
 	}
-	return c.JSON(http.StatusOK,map [string]string{
-		"_id":			user.ID.Hex(),
-		"nickname":		user.Nickname,
-		"password":		user.Password,
-		"age":			user.Age,
-		"height":		user.Height,
-		"weight":		user.Weight,
-
+	return c.JSON(http.StatusOK, map[string]string{
+		"_id":      user.ID.Hex(),
+		"nickname": user.Nickname,
+		"password": user.Password,
+		"age":      user.Age,
+		"height":   user.Height,
+		"weight":   user.Weight,
 	})
 
 }
@@ -94,8 +91,6 @@ func AddUser(c echo.Context) error {
 	user.Height = c.QueryParam("height")
 	user.Weight = c.QueryParam("weight")
 
-	usersCollection := CNX.Database("Caloryes").Collection("Users")
-
 	//check if user already exists
 	empty := User{}
 	check := User{}
@@ -116,6 +111,22 @@ func AddUser(c echo.Context) error {
 	return c.String(http.StatusCreated, fmt.Sprintf("User created with ID %v", user.ID.Hex()))
 }
 
-func UpdateUser(c echo.Context) error  {
-	
+func UpdateUser(c echo.Context) error {
+
+	id, _ := primitive.ObjectIDFromHex(c.Param("id"))
+	weight := c.QueryParam("weight")
+	height := c.QueryParam("height")
+
+	result, err := usersCollection.UpdateOne(
+		context.TODO(),
+		bson.M{"_id": id},
+		bson.D{
+			{"$set", bson.D{{"weight", weight}, {"height", height}}},
+		},
+	)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Print(result)
+	return c.String(http.StatusOK, " User updated")
 }

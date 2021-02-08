@@ -5,8 +5,9 @@ import (
 	"github.com/labstack/echo"
 )
 
-func MainGroup(e *echo.Echo)  {
+func MainGroup(e *echo.Echo) {
 	e.GET("/users", handlers.ListUsers)
 	e.GET("/user/:id", handlers.GetUser)
-	e.POST("addUser",handlers.AddUser)
+	e.POST("addUser", handlers.AddUser)
+	e.PUT("/user/:id", handlers.UpdateUser)
 }
