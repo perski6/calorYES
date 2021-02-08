@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f044fcfc-89f1-4202-b581-c6254990cd87" name="Default Changelist" comment="" />
+    <list default="true" id="f044fcfc-89f1-4202-b581-c6254990cd87" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/Database/connection.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/api/handlers/handlers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/api/mainGroup.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/api/middlewares/middlewares.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/main/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/router/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +47,9 @@
     </option>
   </component>
   <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1mbe9qEV0DB4maVkvIM33sMVSiK" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -26,10 +61,89 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/main/main.go" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\igorg\Desktop\Pracownia_programowania\caloryes\backend\api\handlers" />
+      <recent name="C:\Users\igorg\Desktop\Pracownia_programowania\caloryes\backend\router" />
+      <recent name="C:\Users\igorg\Desktop\Pracownia_programowania\caloryes\backend\main" />
+      <recent name="C:\Users\igorg\Desktop\Pracownia_programowania\caloryes\frontend" />
+      <recent name="C:\Users\igorg\Desktop\Pracownia_programowania\caloryes\frontend\handlers" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="caloryes" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/backend/main.go|$PROJECT_DIR$/backend/main/main.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="432" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609844726742">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="432" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1609844726742" />
+    <state x="570" y="252" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609940344307">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="570" y="252" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1609940344307" />
+    <state x="620" y="263" key="FileChooserDialogImpl" timestamp="1612716908637">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="620" y="263" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1612716908637" />
+    <state width="1637" height="100" key="GridCell.Tab.0.bottom" timestamp="1612718141559">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="100" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1612718141559" />
+    <state width="1637" height="100" key="GridCell.Tab.0.center" timestamp="1612718141559">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="100" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1612718141559" />
+    <state width="1637" height="100" key="GridCell.Tab.0.left" timestamp="1612718141559">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="100" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1612718141559" />
+    <state width="1637" height="100" key="GridCell.Tab.0.right" timestamp="1612718141559">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="100" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1612718141559" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1609843939832">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1680.1010@0.0.1680.1010" timestamp="1609843939832" />
+    <state x="763" y="451" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1609843954886">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="763" y="451" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1680.1010@0.0.1680.1010" timestamp="1609843954886" />
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1609855077484">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1609855077484" />
   </component>
 </project>
