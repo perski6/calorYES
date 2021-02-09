@@ -20,10 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f044fcfc-89f1-4202-b581-c6254990cd87" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/api/handlers/balanceHandlers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/api/handlers/foodHandlers.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/handlers/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/handlers/handlers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api/handlers/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/handlers/userHandlers.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/api/mainGroup.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/mainGroup.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/api/middlewares/middlewares.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/middlewares/middlewares.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/router/router.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +98,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added updateUser and password hashing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added updateUser and password hashing" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="432" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609844726742">
       <screen x="0" y="0" width="1680" height="1010" />
@@ -132,6 +139,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="763" y="451" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1680.1010@0.0.1680.1010" timestamp="1609843954886" />
+    <state x="657" y="419" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612810535727">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="657" y="419" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1010@0.0.1680.1010" timestamp="1612810535727" />
     <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1609855077484">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>

@@ -6,8 +6,7 @@ import (
 	"github.com/labstack/echo"
 )
 
-
-func New() *echo.Echo{
+func New() *echo.Echo {
 
 	e := echo.New()
 
@@ -16,5 +15,7 @@ func New() *echo.Echo{
 
 	//set main routes
 	api.MainGroup(e)
+	api.FoodGroup(e)
+	api.BalanceGroup(e)
 	return e
 }

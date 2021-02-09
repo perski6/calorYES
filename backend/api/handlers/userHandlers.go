@@ -52,25 +52,21 @@ func ListUsers(c echo.Context) error {
 	return c.JSON(http.StatusOK, results)
 }
 
-func GetUser(c echo.Context) error {
+func LoginUser(c echo.Context) error {
+
+	nickname := c.QueryParam("nickname")
+	password := c.QueryParam("password")
 
 	user := User{}
 
-	id := c.Param("id")
-	objID, _ := primitive.ObjectIDFromHex(id)
-	err := usersCollection.FindOne(context.TODO(), bson.M{"_id": objID}).Decode(&user)
-	if err != nil {
-		return c.String(http.StatusNotFound, "cant find user")
+	//db check
+	usersCollection.FindOne(context.TODO(), bson.M{"nickname": nickname}).Decode(&user)
+	hashIsEqual := bcrypt.CompareHashAndPassword([]byte(user.Password), []byte(password))
+	if hashIsEqual != nil {
+		return c.JSON(http.StatusUnauthorized, nil)
+	} else {
+		return c.JSON(http.StatusOK, user)
 	}
-	return c.JSON(http.StatusOK, map[string]string{
-		"_id":      user.ID.Hex(),
-		"nickname": user.Nickname,
-		"password": user.Password,
-		"age":      user.Age,
-		"height":   user.Height,
-		"weight":   user.Weight,
-	})
-
 }
 
 func AddUser(c echo.Context) error {
