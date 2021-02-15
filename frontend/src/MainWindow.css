@@ -1,0 +1,17 @@
+.main-window{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+.listing{
+    background-color: red;
+    width: fill;
+    height: fill;
+}
+.user{
+    background-color: burlywood;
+    width: fill;
+    height: fill;
+}
