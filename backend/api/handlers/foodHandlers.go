@@ -14,9 +14,9 @@ import (
 type Food struct {
 	ID             primitive.ObjectID `json:"_id" bson:"_id"`
 	Name           string             `json:"name" bson:"name"`
-	SugarsPer100   string             `json:"sugars_per_100" bson:"sugars_per_100"`
 	ProteinPer100  string             `json:"protein_per_100" bson:"protein_per_100"`
 	CarbsPer100    string             `json:"carbs_per_100" bson:"carbs_per_100"`
+	FatsPer100     string             `json:"fats_per_100" bson:"fats_per_100"`
 	CaloriesPer100 string             `json:"calories_per_100" bson:"calories_per_100"`
 }
 
@@ -52,9 +52,9 @@ func AddFood(c echo.Context) error {
 	food := Food{
 		ID:             primitive.NewObjectID(),
 		Name:           c.QueryParam("name"),
-		SugarsPer100:   c.QueryParam("sugars_per_100"),
 		ProteinPer100:  c.QueryParam("protein_per_100"),
 		CarbsPer100:    c.QueryParam("carbs_per_100"),
+		FatsPer100:     c.QueryParam("fats_per_100"),
 		CaloriesPer100: c.QueryParam("calories_per_100"),
 	}
 

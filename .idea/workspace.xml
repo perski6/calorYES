@@ -20,13 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f044fcfc-89f1-4202-b581-c6254990cd87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/api/handlers/balanceHandlers.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/handlers/foodHandlers.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/handlers/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/handlers/userHandlers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/mainGroup.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/mainGroup.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/middlewares/middlewares.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/middlewares/middlewares.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/router/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +97,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added updateUser and password hashing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added updateUser and password hashing" />
+    <MESSAGE value="minor fixes and user auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor fixes and user auth" />
   </component>
   <component name="WindowStateProjectService">
     <state x="432" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609844726742">
