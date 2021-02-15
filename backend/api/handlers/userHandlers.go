@@ -104,7 +104,7 @@ func AddUser(c echo.Context) error {
 	}
 
 	log.Printf("this is your user ID %s", user.ID.Hex())
-	return c.String(http.StatusCreated, fmt.Sprintf("User created with ID %v", user.ID.Hex()))
+	return c.JSON(http.StatusCreated, user.ID.Hex())
 }
 
 func UpdateUser(c echo.Context) error {

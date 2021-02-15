@@ -16,18 +16,24 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f044fcfc-89f1-4202-b581-c6254990cd87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/Balance.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Landing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api/handlers/userHandlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/handlers/userHandlers.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Balance.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Balance.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/MainWindow.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/MainWindow.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
     </list>
+    <list id="ea6ede85-ce55-48dc-8de5-ab9ea8b830a6" name="Revert &quot;React files lintering and summarizing calories implementation added&quot;" comment="Revert &quot;React files lintering and summarizing calories implementation added&quot;&#10;&#10;This reverts commit e439ff89" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,12 +44,14 @@
       <list>
         <option value="Go File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="ProjectId" id="1mbe9qEV0DB4maVkvIM33sMVSiK" />
   <component name="ProjectViewState">
@@ -105,7 +113,9 @@
     <MESSAGE value="minor fixes and user auth" />
     <MESSAGE value="Frontend sketch" />
     <MESSAGE value="unused import removal" />
-    <option name="LAST_COMMIT_MESSAGE" value="unused import removal" />
+    <MESSAGE value="Summing balance" />
+    <MESSAGE value="Fixed logout - now clearing balance from store" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed logout - now clearing balance from store" />
   </component>
   <component name="WindowStateProjectService">
     <state x="432" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609844726742">
@@ -140,6 +150,14 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1680.1010@0.0.1680.1010" timestamp="1609843939832" />
+    <state x="478" y="266" width="1117" height="477" key="MultipleFileMergeDialog" timestamp="1613416806142">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="478" y="266" width="1117" height="477" key="MultipleFileMergeDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1613416806142" />
+    <state x="432" y="238" key="Vcs.Push.Dialog.v2" timestamp="1613416655670">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="432" y="238" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1613416655670" />
     <state x="763" y="451" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1609843954886">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>

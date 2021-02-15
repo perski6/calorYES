@@ -3,6 +3,7 @@ import './App.css'
 import { useSelector } from 'react-redux';
 import { selectUser } from './features/userSlice';
 import MainWindow from './MainWindow';
+import Landing from "./Landing";
 function App() {
     const user = useSelector(selectUser);
   return (
@@ -10,7 +11,7 @@ function App() {
    
     <div className="App">
       <div className="content">
-      {user ? <MainWindow/> : <Login/>}
+      {user ? <MainWindow/> : <Landing/>}
         
       </div>
     </div>
