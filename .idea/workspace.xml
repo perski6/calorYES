@@ -26,12 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f044fcfc-89f1-4202-b581-c6254990cd87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/Landing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/handlers/userHandlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/handlers/userHandlers.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Register.js" afterDir="false" />
     </list>
     <list id="ea6ede85-ce55-48dc-8de5-ab9ea8b830a6" name="Revert &quot;React files lintering and summarizing calories implementation added&quot;" comment="Revert &quot;React files lintering and summarizing calories implementation added&quot;&#10;&#10;This reverts commit e439ff89" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +111,8 @@
     <MESSAGE value="unused import removal" />
     <MESSAGE value="Summing balance" />
     <MESSAGE value="Fixed logout - now clearing balance from store" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed logout - now clearing balance from store" />
+    <MESSAGE value="Fixed logout - now clearing balance from store FIX" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed logout - now clearing balance from store FIX" />
   </component>
   <component name="WindowStateProjectService">
     <state x="432" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609844726742">

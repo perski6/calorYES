@@ -26,7 +26,7 @@ const Register = () => {
                 console.log(response.data)
                 if (201 === resp.status){
                     Swal.fire({
-                        title:"User"+name +"created",
+                        title:"User "+name +" created",
                         icon: 'success',
                         text:"Do you want to log in?",
                         showCancelButton: true,
