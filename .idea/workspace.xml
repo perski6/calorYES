@@ -20,10 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f044fcfc-89f1-4202-b581-c6254990cd87" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/Balance.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Balance.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Balance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/MainWindow.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/MainWindow.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +37,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Go File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -53,6 +57,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/main/main.go" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -98,7 +103,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added updateUser and password hashing" />
     <MESSAGE value="minor fixes and user auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor fixes and user auth" />
+    <MESSAGE value="Frontend sketch" />
+    <MESSAGE value="unused import removal" />
+    <option name="LAST_COMMIT_MESSAGE" value="unused import removal" />
   </component>
   <component name="WindowStateProjectService">
     <state x="432" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609844726742">

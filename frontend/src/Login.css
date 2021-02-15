@@ -2,7 +2,6 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-    height: fill;
     align-items: center;
 }
 

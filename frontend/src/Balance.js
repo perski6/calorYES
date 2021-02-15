@@ -2,6 +2,7 @@ import { useState } from "react";
 import { selectBalance, clearBalance } from "./features/balanceSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { selectUser } from "./features/userSlice";
+import './Balance.css'
 
 export default function Balance() {
   const balance = useSelector(selectBalance);
