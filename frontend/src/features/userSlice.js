@@ -1,23 +1,23 @@
-import {createSlice} from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 export const userSlice = createSlice({
-    name: "user",
-    initialState:{
-        user:null,
+  name: "user",
+  initialState: {
+    user: null,
+  },
+  reducers: {
+    login: (state, action) => {
+      state.user = action.payload;
+      console.log("siema");
     },
-    reducers:{
-        login: (state, action) =>{
-            state.user = action.payload;
-            console.log("siema")
-        },
-        nara: (state) => {
-            state.user = null;
-            console.log("dispatch nara")
-        },
-    }
+    nara: (state) => {
+      state.user = null;
+      console.log("dispatch nara");
+    },
+  },
 });
 
-export const {login,nara} = userSlice.actions;
+export const { login, nara } = userSlice.actions;
 
 export const selectUser = (state) => state.user.user;
 
