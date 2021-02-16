@@ -8,7 +8,7 @@ export const userSlice = createSlice({
     reducers:{
         login: (state, action) =>{
             state.user = action.payload;
-            console.log("siema")
+            console.log("siema" + state.user)
         },
         logout: (state) => {
             state.user = null;

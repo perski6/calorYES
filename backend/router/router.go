@@ -16,6 +16,8 @@ func New() *echo.Echo {
 	//set main routes
 	api.MainGroup(e)
 	api.FoodGroup(e)
+	api.ActivityGroup(e)
 	api.BalanceGroup(e)
+
 	return e
 }

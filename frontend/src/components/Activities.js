@@ -7,58 +7,51 @@ import Swal from "sweetalert2";
 
 
 
-const Food = (food) =>{
+const Activities = (food) =>{
 
     const balance = useSelector(selectBalance)
-    const [foods, setFoods] = useState([])
+    const [activities, setActivities] = useState([])
     const dispatch = useDispatch();
 
     const handleAdd = (name,calories) =>{
         let nameJson =JSON.stringify(name);
         let caloriesJson = parseInt(calories)
         Swal.fire({
-            title: 'How much?',
-            text: '(In grams)',
+            title: 'How long?',
+            text: '(In minutes)',
             input: 'number',
             confirmButtonText:'Add',
             showCancelButton: true,
             preConfirm: (amount) =>{
-                
+
                 dispatch(addBalance({
-                    amount:amount  + " grams ",
+                    amount:amount + " minutes ",
                     name:nameJson,
-                    calories:caloriesJson*amount/100,
+                    calories:-caloriesJson*amount,
                 }))
-                   
-               
             }
         })
 
-        
-        
-        
     }
 
-    
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(async () => {
         const result = await axios.get(
-            'http://localhost:8000/foods',
+            'http://localhost:8000/activities',
         );
-        setFoods(result.data);
+        setActivities(result.data);
     },[]);
 
     return (
-        <div className="food-page">
-            {foods.map((food) => (
-                <div className="food-listing" key={food._id}>
-                    <h2>Name:{food.name} Calories:{food.calories_per_100}<button onClick={()=>handleAdd(food.name,food.calories_per_100)}>+</button></h2>
+        <div className="activity-page">
+            {activities.map((activity) => (
+                <div className="activities-listing" key={activity._id}>
+                    <h2>Name:{activity.name}<button onClick={()=>handleAdd(activity.name,activity.calories_per_min)}>+</button></h2>
                 </div>
             ))}
-            </div>
-        
-        )
+        </div>
+
+    )
 
 }
 
-export default Food;
+export default Activities;

@@ -23,6 +23,7 @@ const Register = () => {
         await axios.post('http://localhost:8000/addUser?nickname='+name+'&password='+password+'&height='+height+'&weight='+weight+'&age='+age)
             .then(resp =>{
                 let response = resp
+                axios.post('http://localhost:8000/addBalance?activity=Welcome!&calories_balance=0&user_id='+response.data)
                 console.log(response.data)
                 if (201 === resp.status){
                     Swal.fire({

@@ -20,6 +20,11 @@ func FoodGroup(e *echo.Echo) {
 	e.POST("/addFood", handlers.AddFood)
 }
 
+func ActivityGroup(e *echo.Echo) {
+	e.GET("/activities", handlers.ListActivities)
+	e.POST("/addActivity", handlers.AddActivity)
+}
+
 func BalanceGroup(e *echo.Echo) {
 	e.GET("/userBalance/:user_id", handlers.GetUserBalance)
 

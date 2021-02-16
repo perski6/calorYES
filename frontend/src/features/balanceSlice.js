@@ -7,24 +7,30 @@ export const balanceSlice = createSlice({
     },
     reducers:{
         addBalance: (state, action) => {
-            
-            state.balance= [
+
+            state.balance = [
                 ...state.balance,
-                action.payload
-            ]
+                {
+                    id: state.balance.length === 0 ? 1 : state.balance[state.balance.length - 1].id + 1,
+                    ...action.payload
+                }
+
+        ]
         },
-        nara: (state) => {
-            state.balance = []  ;
-            console.log("Balance cleared")
+        removeSingleItem: (state, action) => {
+            state.balance = state.balance.filter(function(element) {
+                return element.id !== action.payload;
+            });
+            console.log("item " + action.payload + " removed")
         },
         clearBalance: (state) => {
-            state.balance = []  ;
+            state.balance = [] ;
             console.log("Balance cleared")
         },
     }
 });
 
-export const {addBalance, clearBalance, nara} = balanceSlice.actions;
+export const {addBalance, clearBalance, removeSingleItem} = balanceSlice.actions;
 
 export const selectBalance = (state) => state.balance.balance;
 

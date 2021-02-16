@@ -13,6 +13,7 @@ import (
 )
 
 type Balance struct {
+	ID              primitive.ObjectID `json:"_id" bson:"_id"`
 	Date            primitive.DateTime `json:"date" bson:"date"`
 	Activity        string             `json:"activity" bson:"activity"`
 	CaloriesBalance string             `json:"calories_balance" bson:"calories_balance"`
@@ -55,6 +56,7 @@ func AddBalance(c echo.Context) error {
 	id, _ := primitive.ObjectIDFromHex(c.QueryParam("user_id"))
 
 	balance := Balance{
+		ID:              primitive.NewObjectID(),
 		Date:            primitive.NewDateTimeFromTime(time.Now()),
 		Activity:        c.QueryParam("activity"),
 		CaloriesBalance: c.QueryParam("calories_balance"),
@@ -71,5 +73,5 @@ func AddBalance(c echo.Context) error {
 		fmt.Println("InsertOne() API result:", result)
 	}
 
-	return c.String(http.StatusCreated, fmt.Sprint("Balance added"))
+	return c.JSON(http.StatusCreated, balance)
 }
