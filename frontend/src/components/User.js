@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { logout, selectUser } from "../features/userSlice";
 import { clearBalance } from "../features/balanceSlice";
-import History from "./History";
 import { clearHistory } from "../features/historySlice";
 
 const User = () => {
@@ -26,7 +25,6 @@ const User = () => {
       <h2>
         BMR: {user.weight * 10 + 6.25 * user.height + 4.92 * user.age + 5}
       </h2>
-      <History />
     </div>
   );
 };

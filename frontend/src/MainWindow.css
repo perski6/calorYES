@@ -1,18 +1,60 @@
-.main-window {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: auto;
-  width: auto;
-}
-.listing {
-  background-color: red;
+.mainwindow {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px auto auto auto;
 }
 .user {
-  background-color: burlywood;
+  background-color: cadetblue;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
 }
-.balance-page {
-  background-color: #ff7f50;
-  display: block;
-  width: auto;
+.history {
+  background-color: chartreuse;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 9;
+  overflow-y: auto;
+}
+.food-listing {
+}
+.food {
+  display: grid;
+  background-color: blue;
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  overflow-y: auto;
+}
+.activities {
+  background-color: firebrick;
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  overflow-y: auto;
+}
+.balance {
+  background-color: darkslategrey;
+  grid-column-start: 6;
+  grid-column-end: 11;
+  grid-row-start: 4;
+  overflow-y: auto;
+  grid-row-end: 11;
+}
+*::-webkit-scrollbar {
+  width: 1em;
+}
+
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: black;
+  outline: 1px solid black;
 }

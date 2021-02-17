@@ -39,7 +39,7 @@ const Food = (food) => {
   }, []);
 
   return (
-    <div className="food-page">
+    <div className="food">
       {foods.map((food) => (
         <div className="food-listing" key={food._id}>
           <h2>

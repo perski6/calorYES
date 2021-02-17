@@ -48,7 +48,7 @@ export default function Balance() {
   };
 
   return (
-    <div className="balance-page">
+    <div className="balance">
       {balance.map((item) => (
         <div className="balance-listing">
           <p>

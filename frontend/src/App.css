@@ -1,9 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.App {
+  margin: auto;
+  width: 66%;
 }
-
 body {
   background: rgb(248, 248, 248);
 }

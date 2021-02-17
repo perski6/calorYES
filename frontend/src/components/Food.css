@@ -1,6 +1,13 @@
-.food-page {
-  float: left;
-  background-color: rgb(181, 181, 255);
-  height: 50%;
-  width: 50%;
+food-listing::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+food-listing::-webkit-scrollbar-track {
+  background: orange; /* color of the tracking area */
+}
+
+food-listing::-webkit-scrollbar-thumb {
+  background-color: blue; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid orange; /* creates padding around scroll thumb */
 }
