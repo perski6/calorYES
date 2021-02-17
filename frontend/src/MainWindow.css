@@ -1,20 +1,18 @@
-.main-window{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: auto;
-    width: auto;
+.main-window {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+  width: auto;
 }
-.listing{
-    background-color: red;
-
+.listing {
+  background-color: red;
 }
-.user{
-    background-color: burlywood;
-
+.user {
+  background-color: burlywood;
 }
-.balance-page{
-    background-color: #ff7f50;
-    display: block;
-    width: auto;
+.balance-page {
+  background-color: #ff7f50;
+  display: block;
+  width: auto;
 }
