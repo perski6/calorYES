@@ -8,7 +8,6 @@ import (
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"log"
 	"net/http"
-	"reflect"
 	"time"
 )
 
@@ -42,7 +41,6 @@ func GetUserBalance(c echo.Context) error {
 
 		results = append(results, &elem)
 	}
-	fmt.Print(results)
 
 	if err := cur.Err(); err != nil {
 		log.Fatal(err)
@@ -63,14 +61,14 @@ func AddBalance(c echo.Context) error {
 		UserId:          id,
 	}
 
-	fmt.Printf("balance %v %v %v %v", balance.Date, balance.Activity, balance.CaloriesBalance, balance.UserId)
+	//fmt.Println("balance %v %v %v %v", balance.Date, balance.Activity, balance.CaloriesBalance, balance.UserId)
 
 	result, insertErr := balanceCollection.InsertOne(context.TODO(), balance)
 	if insertErr != nil {
 		return c.String(http.StatusConflict, fmt.Sprint(insertErr))
 	} else {
-		fmt.Println("InsertOne() result type: ", reflect.TypeOf(result))
-		fmt.Println("InsertOne() API result:", result)
+		//fmt.Println("InsertOne() result type: ", reflect.TypeOf(result))
+		fmt.Printf("InsertOne() API result: %v", result)
 	}
 
 	return c.JSON(http.StatusCreated, balance)

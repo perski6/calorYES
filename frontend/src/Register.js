@@ -68,11 +68,11 @@ const Register = () => {
         <div className="login">
             <form className="login-form" onSubmit={(e) => handleSubmit(e)}>
                 <h1>Sign up</h1>
-                <input type="nickname" name="nickname" placeholder="Nickname" value = {name} onChange={(e) => setName(e.target.value)}/>
-                <input type="password" name="password" placeholder="Password" value = {password} onChange={(e) => setPassword(e.target.value)}/>
-                <input type="height" name="height" placeholder="Height" value = {height} onChange={(e) => setHeight(e.target.value)}/>
-                <input type="weight" name="weight" placeholder="Weight" value = {weight} onChange={(e) => setWeight(e.target.value)}/>
-                <input type="age" name="age" placeholder="Age" value = {age} onChange={(e) => setAge(e.target.value)}/>
+                <input type="nickname" name="nickname" placeholder="Nickname" value = {name} onChange={(e) => setName(e.target.value)} required/>
+                <input type="password" name="password" placeholder="Password" value = {password} onChange={(e) => setPassword(e.target.value)} required/>
+                <input type="number" name="height" placeholder="Height" value = {height} onChange={(e) => setHeight(e.target.value)} required/>
+                <input type="number" name="weight" placeholder="Weight" value = {weight} onChange={(e) => setWeight(e.target.value)} required/>
+                <input type="number" name="age" placeholder="Age" value = {age} onChange={(e) => setAge(e.target.value)}/>
 
 
                 <button type="submit" className="submit-btn">REGISTER</button>

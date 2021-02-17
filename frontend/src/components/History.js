@@ -10,6 +10,7 @@ const History = () =>{
     const user = useSelector(selectUser);
     const dispatch = useDispatch()
 
+
     useEffect(async () => {
         const result = await axios.get(
             'http://localhost:8000/userBalance/'+user.id,
@@ -19,11 +20,16 @@ const History = () =>{
 
     const history = useSelector(selectHistory)
     return(
-        <div className="user-history">
+        <div className="history">
 
             {history.map((item) => (
+
                 <div className="history-listing" key={item._id}>
-                    {item.activity === "Welcome!" ? <h2> Welcome to CalorYes! </h2> : <h2>Name: {item.activity} Calories: {item.calories_balance} Date: {item.date}</h2>   }
+                    {
+
+                        item.activity === "Welcome!" ?
+                            <h2> Welcome to CalorYes! </h2> :
+                            <h2>Name: {item.activity} Calories: {item.calories_balance} Date: {item.date}</h2>   }
 
                 </div>
             ))}

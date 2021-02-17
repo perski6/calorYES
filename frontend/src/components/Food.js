@@ -20,17 +20,18 @@ const Food = (food) =>{
             title: 'How much?',
             text: '(In grams)',
             input: 'number',
+            required:'true',
             confirmButtonText:'Add',
             showCancelButton: true,
             preConfirm: (amount) =>{
-                
+
                 dispatch(addBalance({
                     amount:amount  + " grams ",
                     name:nameJson,
                     calories:caloriesJson*amount/100,
                 }))
-                   
-               
+
+
             }
         })
 
