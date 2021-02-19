@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import "./Food.css";
 import { selectBalance, addBalance } from "../features/balanceSlice";
 import { useDispatch, useSelector } from "react-redux";
 import Swal from "sweetalert2";
@@ -39,15 +38,20 @@ const Food = (food) => {
   }, []);
 
   return (
-    <div className="food">
+    <div className="food sub-window first-row">
       {foods.map((food) => (
         <div className="food-listing" key={food._id}>
-          <h2>
-            Name:{food.name} Calories:{food.calories_per_100}
+            <div className="food-listing-text">
+              Name:<b>{food.name}</b> Calories:{food.calories_per_100}
+            </div>
+            {/*<div className="food-info">*/}
+            {/*  Protein: {food.protein_per_100} Carbs: {food.carbs_per_100} Fats:{" "}*/}
+            {/*  {food.fats_per_100}*/}
+            {/*</div>*/}
             <button onClick={() => handleAdd(food.name, food.calories_per_100)}>
-              +
+              <span>+</span>
             </button>
-          </h2>
+
         </div>
       ))}
     </div>

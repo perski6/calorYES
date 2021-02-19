@@ -17,16 +17,19 @@ const History = () => {
 
   const history = useSelector(selectHistory);
   return (
-    <div className="history">
+    <div className="history sub-window second-row">
       {history.map((item) => (
         <div className="history-listing" key={item._id}>
           {item.activity === "Welcome!" ? (
             <h2> Welcome to CalorYes! </h2>
           ) : (
-            <h2>
+              <>
+            <div className="history-item">
               Name: {item.activity} Calories: {item.calories_balance} Date:{" "}
               {item.date}
-            </h2>
+            </div>
+            <hr/>
+            </>
           )}
         </div>
       ))}

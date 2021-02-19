@@ -48,18 +48,31 @@ export default function Balance() {
   };
 
   return (
-    <div className="balance">
+    <div className="balance sub-window second-row">
       {balance.map((item) => (
-        <div className="balance-listing">
-          <p>
-            ID:{item.id} {item.amount} of {item.name} Calories: {item.calories}{" "}
-            <button onClick={() => removeItem(item.id)}> - </button>
-          </p>
+        <div className="food-listing">
+          <div className="food-listing-text">
+            <p>
+              {item.amount} of {item.name} Calories: {item.calories}{" "}
+            </p>
+          </div>
+          <button onClick={() => removeItem(item.id)}>
+            <span>-</span>
+          </button>
         </div>
       ))}
-      {"All calories: " + caloriesSum}
-      <button onClick={() => dispatch(clearBalance())}>Clear Balance</button>
-      <button onClick={() => handleClick()}>Post</button>
+      <div className="summary ">
+        {"All calories: " + caloriesSum}
+        <button
+          className="balance-button"
+          onClick={() => dispatch(clearBalance())}
+        >
+          Clear Balance
+        </button>
+        <button className="confirm-button" onClick={() => handleClick()}>
+          Post
+        </button>
+      </div>
     </div>
   );
 }

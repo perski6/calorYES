@@ -9,12 +9,13 @@ import Activities from "./components/Activities";
 const MainWindow = () => {
   return (
     <div className="mainwindow">
+
       <User />
       <History />
       <Food />
       <Activities />
-
       <Balance />
+
     </div>
   );
 };

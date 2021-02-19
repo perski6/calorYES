@@ -16,12 +16,12 @@ const User = () => {
   };
 
   return (
-    <div className="user">
-      <button onClick={(e) => handleLogout(e)}>Logout</button>
+    <div className="user sub-window first-row">
+      <button className="logout-button" onClick={(e) => handleLogout(e)}>Logout</button>
       <h1>Hello, {user.name}</h1>
-      <h2>Age: {user.age}</h2>
-      <h2>Height: {user.height}</h2>
-      <h2>Weight: {user.weight}</h2>
+      Age: {user.age}<br/>
+      Height: {user.height}<br/>
+      Weight: {user.weight}<br/>
       <h2>
         BMR: {user.weight * 10 + 6.25 * user.height + 4.92 * user.age + 5}
       </h2>

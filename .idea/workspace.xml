@@ -25,7 +25,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f044fcfc-89f1-4202-b581-c6254990cd87" name="Default Changelist" comment="" />
+    <list default="true" id="f044fcfc-89f1-4202-b581-c6254990cd87" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Balance.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Balance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/MainWindow.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/MainWindow.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Activities.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Activities.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Food.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Food.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Food.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Food.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/History.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/History.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/User.js" afterDir="false" />
+    </list>
     <list id="ea6ede85-ce55-48dc-8de5-ab9ea8b830a6" name="Revert &quot;React files lintering and summarizing calories implementation added&quot;" comment="Revert &quot;React files lintering and summarizing calories implementation added&quot;&#10;&#10;This reverts commit e439ff89" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

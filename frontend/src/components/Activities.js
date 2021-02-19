@@ -37,19 +37,20 @@ const Activities = (food) => {
   }, []);
 
   return (
-    <div className="activities">
+    <div className="activities sub-window first-row">
       {activities.map((activity) => (
-        <div className="activities-listing" key={activity._id}>
-          <h2>
-            Name:{activity.name}
+        <div className="food-listing" key={activity._id}>
+            <div className="food-listing-text">
+              Name:{activity.name}
+            </div>
             <button
               onClick={() =>
                 handleAdd(activity.name, activity.calories_per_min)
               }
             >
-              +
+              <span>+</span>
             </button>
-          </h2>
+
         </div>
       ))}
     </div>
